@@ -9,7 +9,7 @@ const Todo = () => {
     <>
       {todo.map((todo, i) => (
         <div
-          className=" w-[100%] mt-8 p-3 border rounded-lg font-bold flex justify-between items-center"
+          className=" w-[100%] mt-8 p-3 border rounded-lg font-bold flex flex-col gap-3 sm:flex-row sm:gap-0 justify-between items-center flex-wrap items-start px-2"
           key={todo.id}
           style={{
             backgroundColor: todo.completed ? "#51cf66" : "",
@@ -17,6 +17,7 @@ const Todo = () => {
           }}
         >
           <p
+            className="break-words w-full sm:w-auto flex-grow text-left"
             style={{
               textDecoration: todo.completed ? "line-through" : "",
               letterSpacing: "1px",

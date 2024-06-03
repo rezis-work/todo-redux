@@ -7,7 +7,7 @@ function App() {
   const todoList = useSelector((store) => store.todo.todos);
   return (
     <div className="App">
-      <h1 className=" mb-10 text-center text-[#40c057]">
+      <h1 className=" mb-10 text-center text-[#40c057] text-[20px] sm:text-[20px]">
         Hello to the Fa-TODO List
       </h1>
       <AddTodo />
