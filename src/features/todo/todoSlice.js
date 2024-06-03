@@ -2,9 +2,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const loadFromLocalStorage = () => {
   const storedTodos = localStorage.getItem("todos");
-  return storedTodos
-    ? JSON.parse(storedTodos)
-    : [{ id: 1, text: "hello", completed: false }];
+  return storedTodos ? JSON.parse(storedTodos) : [];
 };
 
 const initialState = {
