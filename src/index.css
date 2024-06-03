@@ -17,6 +17,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  width: 1000px;
+}
+
+@media (max-width: 1000px) {
+  .App {
+    width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .App {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .App {
+    width: 350px;
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,9 +51,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: center;
+  padding-top: 100px;
 }
 
 h1 {
